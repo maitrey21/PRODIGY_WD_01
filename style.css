@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    padding-top: 2vw;
+    background-color: lightcyan;
+    font-size: 4vw;
+}    
+body{
+    font-family: "Poppins", sans-serif; 
+    background-color: #2f4f4f;
+}
+.game{
+    display: flex;
+    justify-content: center;
+    margin-top: 3vw;
+    margin-left: 50vw;
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3, 10vw);
+    
+}
+.grid{
+    font-size: 7vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.08vw solid #b0b0b0;
+    
+}
+.gridtext.X{
+color: #dcdcdc;
+}
+.gridtext.O{
+    color: #ff4500;
+}
+.grid:hover{
+    background-color:#556b2f;
+}
+.top-0{
+    border-top: 0;
+}
+.bottom-0{
+    border-bottom: 0;
+}
+.right-0{
+    border-right: 0;
+}
+.left-0{
+    border-left: 0;
+}
+.instructions{
+    margin-right: 50vw;
+    margin-top: 1vw; 
+    position: relative;
+    top: -34vw; 
+    right:-4vw;
+    font-size: 1.4vw;
+    color: white;
+}
+button{
+    display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: #8a2be2;
+  padding: 1vw 4vh;
+  border-radius: 1vw;
+font-family: 'Roboto';
+font-size: 1vw;
+position: relative;
+left: 63vw;
+top: 1vw;
+cursor: pointer;
+}
+.selection{
+    position: relative;
+    top: -65.4vw;
+    left: 72vw;
+    font-size: 1.5vw;
+    color: white;
+}
+option{
+    font-size: 1vw;
+}
+select{
+    background-color:#8a2be2;
+    padding: 1vw 1vh;
+    border-radius: 1vw;
+    color: white;
+}
+h2{
+    text-align: center;
+}
+.turn2{
+    position: relative;
+    left: 71vw;
+    top: 1vw;
+    font-size: 1.5vw;
+    color: white;
+}
+.line{
+    background-color: black;
+    height: 7px;
+    width: 0;
+    position: absolute;
+    background-color: #ff4500;
+    transition: width 1s ease-in-out;
+}

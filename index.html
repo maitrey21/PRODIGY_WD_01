@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Web Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tic Tac Toe Game</h1>
+    <button id="reset">Restart</button>
+    <div class="game">
+        <div class="main">
+            <div class="line"></div>
+            <div class="grid top-0 left-0"><span class="gridtext"></span></div>
+        <div class="grid top-0"><span class="gridtext"></span></div>
+        <div class="grid top-0 right-0"><span class="gridtext"></span></div>
+        <div class="grid left-0"><span class="gridtext"></span></div>
+        <div class="grid"><span class="gridtext"></span></div>
+        <div class="grid right-0"><span class="gridtext"></span></div>
+        <div class="grid left-0 bottom-0"><span class="gridtext"></span></div>
+        <div class="grid bottom-0"><span class="gridtext"></span></div>
+        <div class="grid bottom-0 right-0"><span class="gridtext"></span></div>
+        </div>
+        </div>
+        <div id="currentPlayer" class="turn2">Current Turn: X</div>
+        <div class="instructions">
+            <h2>Instructions</h2>
+            <br>
+            <b>Objective:</b> The goal is to be the first player to get three of your marks (X or O) in a row. The row can be horizontal, vertical, or diagonal.
+            <br>
+            <br>
+            <p><b>Taking turns:</b> Take turns to place your mark (X or O) in an empty cell on the grid.</p>
+            <p><b>Placing a mark:</b> On your turn, place your mark in one of the empty cells by clicking on it.</p>
+            <br>
+            <p>A player wins by being the first to get three of their marks in a row, which can be:</p>
+            <br>
+            <p><b>Horizontal:</b> Three marks in a row on the same horizontal line.</p>
+            <p><b>Vertical:</b> Three marks in a row on the same vertical line.</p>
+            <p><b>Diagonal:</b> Three marks in a row on either diagonal line.</p>
+        </div>
+        <div class="selection">
+            <label for="ModeSelect">Player Mode:</label>
+            <select id="ModeSelect">
+              <option value="ai" selected>Player vs AI</option>
+              <option value="player">Player vs Player</option>
+            </select>
+    
+    <script src="script.js"></script>
+</body>
+</html>
